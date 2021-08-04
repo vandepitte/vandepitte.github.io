@@ -2,7 +2,7 @@
 import * as d3 from "https://cdn.skypack.dev/d3@7";
 import {colors} from "./colors.js"
 
-export const drawGauge(svg, data) {
+const drawGauge = function(svg, data) {
     r = 100
     svg.attr("width", r * 2).attr("height", r);
 
@@ -18,4 +18,22 @@ export const drawGauge(svg, data) {
         .append('path')
         .attr('d', p)
         .attr('fill', colors.dark_blue);
+}
+
+const functionMap = {
+    'gauge': drawGauge
+}
+
+export const init = function() {
+    d3.selectAll('[data-graph]')
+        .nodes()
+        .forEach(function(node) {
+            var div = document.createElement("div");
+            node.parentNode.insertBefore(div, node.nextSibling);
+            functionMap[node.dataset.graph](
+                d3.select(div).append('svg'),
+                JSON.parse(node.innerHTML)
+            );
+
+        });
 }
