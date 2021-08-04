@@ -1,0 +1,15 @@
+export const colors = {
+    dark_blue : "#1E5FA6",
+    light_blue : "#049EE0",
+    white : "#FFFFFF",
+    grey1 : "#F7F7F7",
+    grey2 : "#F2F2F2",
+    grey3 : "#E6E6E6",
+    grey4 : "#666666",
+    grey5 : "#1A1A1A",
+    tld_vlaanderen : "#81812A",
+    tld_brussels : "#55083F",
+    tld_be : "#2E2D31",
+    red : "#CB4D4F",
+    green : "#15B0C0",
+}
