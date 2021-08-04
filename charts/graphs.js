@@ -6,7 +6,7 @@ const drawGauge = function(svg, data) {
     const r = 100;
     svg.attr("width", r * 2).attr("height", r);
 
-    p = d3.arc()({
+    const p = d3.arc()({
       startAngle: 0 - Math.PI / 2,
       endAngle: data.speed / data.maxSpeed * Math.PI - Math.PI / 2,
       innerRadius: r*0.7,
