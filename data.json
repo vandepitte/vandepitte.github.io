@@ -1,0 +1,21 @@
+{
+  "name": "John Doe",
+  "children": [
+    {
+      "name": "Joe",
+      "age": 8
+    },
+    {
+      "name": "Jack",
+      "age": 10
+    },
+    {
+      "name": "William",
+      "age": 13
+    },
+    {
+      "name": "Averell",
+      "age": 16
+    }
+  ]
+}
