@@ -1,5 +1,6 @@
 {
     "@odata.context": "serviceRoot/$metadata#People",
+    
     "value": [
         {
             "@odata.id": "serviceRoot/People('russellwhyte')",
